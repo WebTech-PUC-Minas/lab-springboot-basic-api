@@ -24,10 +24,10 @@ Linguagens, Frameworks e Bibliotecas utilizadas na construção do projeto.
   * [Pré-Requisitos](#pré-requisitos)
   * [Configuração de Ambiente](#configuração-de-ambiente)
 * [Roadmap](#roadmap)
-  * [Step 1](#step1)
-  * [Step 2](#step2)
-  * [Step 3](#step3)
-  * [Step 4](#step4)
+  * [Step 1](#step-1)
+  * [Step 2](#step-2)
+  * [Step 3](#step-3)
+  * [Step 4](#step-4)
 
 
 ## Instalações
