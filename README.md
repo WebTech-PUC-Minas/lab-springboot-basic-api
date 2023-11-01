@@ -20,8 +20,8 @@ Linguagens, Frameworks e Bibliotecas utilizadas na construção do projeto.
 
 ## Tabela de conteúdos
 
-* [Instalações](#instalacoes)
-  * [Pré-Requisitos](#pre-requisitos)
+* [Instalações](#instalações)
+  * [Pré-Requisitos](#pré-requisitos)
   * [Configuração de Ambiente](#configuracao-de-ambiente)
 * [Roadmap](#roadmap)
   * [Name Step 1](#step1)
