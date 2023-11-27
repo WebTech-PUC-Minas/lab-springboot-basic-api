@@ -18,9 +18,9 @@ public class ProductController {
     @Autowired //injeção de dependência
     private ProductRepository productRepository;
 
-    @GetMapping
+    @GetMapping //apenas os produtos ativos
     public ResponseEntity getAllProducts(){
-        var allProducts = productRepository.findAll();
+        var allProducts = productRepository.findAllByActiveTrue();
         return ResponseEntity.ok(allProducts);
     }
 
@@ -47,10 +47,17 @@ public class ProductController {
         }
     }
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/{id}")  //não deleta, apenas o deixa como inativo no banco
+    @Transactional
     public ResponseEntity deleteProduct(@PathVariable String id){
-        productRepository.deleteById(id);
-        return ResponseEntity.noContent().build();
+        Optional<Product> existingProduct = productRepository.findById(id);
+        if (existingProduct.isPresent()){
+            Product updateProduct = existingProduct.get();
+            updateProduct.setActive(false);
+            return ResponseEntity.noContent().build();
+        } else{
+            return ResponseEntity.notFound().build();
+        }
     }
 
 
