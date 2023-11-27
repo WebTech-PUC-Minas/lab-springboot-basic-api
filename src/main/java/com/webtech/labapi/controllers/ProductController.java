@@ -1,8 +1,9 @@
 package com.webtech.labapi.controllers;
 
 import com.webtech.labapi.domain.product.Product;
-import com.webtech.labapi.domain.product.ProductRepository;
-import com.webtech.labapi.domain.product.RequestProduct;
+import com.webtech.labapi.repositories.ProductRepository;
+import com.webtech.labapi.domain.product.dto.RequestProduct;
+import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -56,7 +57,7 @@ public class ProductController {
             updateProduct.setActive(false);
             return ResponseEntity.noContent().build();
         } else{
-            return ResponseEntity.notFound().build();
+            throw new EntityNotFoundException();
         }
     }
 

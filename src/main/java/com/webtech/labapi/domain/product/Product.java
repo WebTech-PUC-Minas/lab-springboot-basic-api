@@ -1,5 +1,6 @@
 package com.webtech.labapi.domain.product;
 
+import com.webtech.labapi.domain.product.dto.RequestProduct;
 import jakarta.persistence.*;
 import lombok.*;
 
