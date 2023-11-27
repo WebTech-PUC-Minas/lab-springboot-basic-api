@@ -1,5 +1,6 @@
-package com.webtech.labapi.domain.product;
+package com.webtech.labapi.repositories;
 
+import com.webtech.labapi.domain.product.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

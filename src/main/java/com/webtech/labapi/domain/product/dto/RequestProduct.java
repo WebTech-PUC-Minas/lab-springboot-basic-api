@@ -1,4 +1,4 @@
-package com.webtech.labapi.domain.product;
+package com.webtech.labapi.domain.product.dto;
 
 
 import jakarta.validation.constraints.NotBlank;
