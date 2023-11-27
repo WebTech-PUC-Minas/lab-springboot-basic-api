@@ -146,8 +146,23 @@ Clique no botão "Generate" para baixar um arquivo ZIP contendo a estrutura inic
     - `sua_tabela_aqui` - tabela que você criou inicialmente no PostgreSQL e configurou o caminho na migrations.
 
 
+### STEP 3 - Desenvolvimento da Aplicação Spring Boot
+1. Criação do Modelo (Model):
+   Dentro do pacote `src/main/java/com/seupacote/domain/nomeEntidade` crie a classe que representa o modelo da entidade desejada. 
+
+
+2. Anote a classe com @Entity e especifique detalhes como @Id e @GeneratedValue para a chave primária.
+<img src="img.png" width="900px">
+
+
+3. Criação do Repositório (Repository):
+- Em src/main/java/com/seupacote/repositories, crie uma interface que estende JpaRepository para a entidade desejada.
+
+4. Desenvolvimento do Controller:
+- Em src/main/java/com/seupacote/controllers, crie uma classe de controlador, a qual deve conter a notação @RestController
+
 ## Contato
-Kimberly Spencer Lourenço - [kimberlylizsl@gmail.com](mailto:kimberlylizsl@gmail.com).
+Kimberly Spencer - [kimberlylizsl@gmail.com](mailto:kimberlylizsl@gmail.com).
 
 GitHub: [github.com/kspencerl](https://github.com/kspencerl)
 
