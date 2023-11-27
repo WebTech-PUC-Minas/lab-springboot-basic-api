@@ -20,9 +20,12 @@ public class Product {
 
     private float price;
 
+    private Boolean active;
+
     //relacionando o nosso DTO (RequestProcut) com a entidade Product
     public Product(RequestProduct requestProduct){
         this.name = requestProduct.name();
         this.price = requestProduct.price();
+        this.active = true; //set all true when created
     }
 }
